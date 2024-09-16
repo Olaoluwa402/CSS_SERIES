@@ -1,0 +1,152 @@
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* element selector */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* id selector */
+#main-header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* descendant selector */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* descendat combinator */
+nav ul li {
+  margin-right: 20px;
+}
+
+/* child combinator selector */
+nav ul li > a {
+  color: #fff;
+}
+
+/* about  */
+/* group selector */
+#about,
+#posts {
+  padding: 20px;
+  margin: 2px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+/* element selector */
+h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #e67e22;
+}
+
+/* class selector */
+.highlight {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* pseudo-element */
+h2::before {
+  content: "🌟";
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* element selector */
+footer {
+  background-color: #1e1e1e;
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid #333;
+}
+
+/* descendant selector */
+footer a {
+  color: #f0f0f0;
+  margin: 0 10px;
+}
+
+/* class selector  pseudo-class */
+footer a:hover {
+  color: #3498db;
+}
+
+/* attribute selector */
+a[href="https://"]
+{
+  color: #f0f0f0;
+}
+
+/* descendant selector */
+nav ul li a i {
+  color: #e67e22;
+  margin-right: 8px;
+}
+
+/* post */
+.post {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+}
+
+.post-title {
+  color: #f0f0f0;
+}
+
+.post-content {
+  color: #ddd;
+}
+
+.post-title::after {
+  content: "📝";
+  margin-left: 10px;
+}
+
+.read-more {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.read-more::after {
+  content: "→";
+  margin-left: 4px;
+}
+
+.read-more:hover {
+  color: #e67e22;
+}
+
+nav ul > li > a {
+  font-size: 1.2em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+a:hover,
+button:hover {
+  transition: color 0.3s ease-in-out;
+}
